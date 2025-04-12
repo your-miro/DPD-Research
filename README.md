@@ -35,6 +35,8 @@ A custom composite cost function was developed to enhance learning efficiency an
 ```python
 Loss = w(t) * ACLR + (1 - w(t)) * NMSE
 w(t) = init_w + grthfact * t
+```
+
 Where:
 init_w is the initial weight of the ACLR loss
 grthfact is the growth factor that this weight increases by in every epoch
