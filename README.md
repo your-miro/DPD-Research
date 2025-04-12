@@ -1,15 +1,15 @@
-# Behavioral Modeling of GaN Power Amplifiers Using BiLSTM with Adaptive Cost Functions
+# Behavioral Modeling of GaN Power Amplifiers Using BiLSTM & DPD with Adaptive Cost Functions
 
 ## Overview
 
-This repository presents a lightweight yet effective behavioral modeling pipeline for GaN-based Power Amplifiers (PAs) using TensorFlow and Keras. The work explores whether different GaN PAs can be matched in behavior through minimal-complexity BiLSTM architectures and gain adjustment, while introducing a novel dual-objective cost function for training.
+This repository presents a lightweight yet effective behavioral modeling pipeline for GaN-based Power Amplifiers (PAs) using TensorFlow and Keras. The work explores whether different GaN PAs can be matched in behavior through minimal-complexity BiLSTM architectures and gain adjustment, alongside introducing a novel dual-objective cost function for Digital Predistortion (DPD) training.
 
 ## Objectives
 
 - Model the nonlinear behavior of **two GaN PAs** using BiLSTM-based RNNs with **minimal complexity**.
 - Use **I/Q stream arrays** with a specified **memory depth** as inputs to the models.
 - Evaluate whether **gain-staged DNNs**, applied before or after the BiLSTM models, can **match the output behavior** between the two amplifiers.
-- Introduce a **custom training objective** that:
+- Introduce a **custom training objective** for DPD that:
   - Prioritizes **NMSE** during the early training epochs.
   - Gradually shifts focus toward minimizing **ACLR**, using a fast FFT-based implementation in native Keras.
 - Normalize outputs based on **small-signal gain (SSG)** to isolate and model only the **nonlinear components** of amplifier behavior.
