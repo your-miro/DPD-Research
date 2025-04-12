@@ -33,4 +33,8 @@ This repository presents a lightweight yet effective behavioral modeling pipelin
 A custom composite cost function was developed to enhance learning efficiency and task specificity:
 
 ```python
-Loss = w(t) * NMSE + (1 - w(t)) * ACLR
+Loss = w(t) * ACLR + (1 - w(t)) * NMSE
+w(t) = init_w + grthfact * t
+Where:
+init_w is the initial weight of the ACLR loss
+grthfact is the growth factor that this weight increases by in every epoch
