@@ -45,14 +45,17 @@ grthfact is the growth factor that this weight increases by in every epoch
 
 Results are applicable to single, and multiple channel FDM-ed signals.
 ```
-┃ Layer                                ┃ Output Shape                ┃         Param # ┃
-
-│ bidirectional                        │ (None, 6, 64)               │           8,960 │
-
+Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ bidirectional (Bidirectional)        │ (None, 6, 64)               │           8,960 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
 │ global_max_pooling1d                 │ (None, 64)                  │               0 │
-
-│ dense                                │ (None, 2)                   │             130 │
-
+│ (GlobalMaxPooling1D)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ (None, 2)                   │             130 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
  Total params: 27,272 (106.54 KB)
  Trainable params: 9,090 (35.51 KB)
  Non-trainable params: 0 (0.00 B)
@@ -60,18 +63,18 @@ Results are applicable to single, and multiple channel FDM-ed signals.
 ```
 # (Training PA1 & PA2)
 ![image](https://github.com/user-attachments/assets/fba54d4a-280a-40aa-978b-3844b54142b9)
-
+```
 Behavioral modelling of PA1 nmse is -33.14927716768715 dB
-
+```
 ![image](https://github.com/user-attachments/assets/e1409790-d6a0-4f86-93fb-5835f9fbc873)
-
+```
 Behavioral modelling of PA2 nmse is -33.61280015701266 dB
-
+```
 # (DPD using Loss Function)
 ![image](https://github.com/user-attachments/assets/abc63a44-1a78-4f13-b2f5-056c7b37f19c)
-
+```
 Before Linearization:                              After Linearization:
 Upper ACLR = -28.43972292246042 (dBc)              Upper ACLR = -44.25079531333139 (dBc)
 Lower ACLR = -28.43972292246042 (dBc)              Lower ACLR = -45.03776684959236 (dBc)
-
+```
 # To be Continued...
