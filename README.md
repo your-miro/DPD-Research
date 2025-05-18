@@ -46,9 +46,13 @@ grthfact is the growth factor that this weight increases by in every epoch
 Results are applicable to single, and multiple channel FDM-ed signals.
 
 ┃ Layer                                ┃ Output Shape                ┃         Param # ┃
+
 │ bidirectional                        │ (None, 6, 64)               │           8,960 │
+
 │ global_max_pooling1d                 │ (None, 64)                  │               0 │
+
 │ dense                                │ (None, 2)                   │             130 │
+
  Total params: 27,272 (106.54 KB)
  Trainable params: 9,090 (35.51 KB)
  Non-trainable params: 0 (0.00 B)
