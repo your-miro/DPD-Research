@@ -44,7 +44,7 @@ grthfact is the growth factor that this weight increases by in every epoch
 ## Results
 
 Results are applicable to single, and multiple channel FDM-ed signals.
-
+```
 ┃ Layer                                ┃ Output Shape                ┃         Param # ┃
 
 │ bidirectional                        │ (None, 6, 64)               │           8,960 │
@@ -57,7 +57,7 @@ Results are applicable to single, and multiple channel FDM-ed signals.
  Trainable params: 9,090 (35.51 KB)
  Non-trainable params: 0 (0.00 B)
  Optimizer params: 18,182 (71.03 KB)
-
+```
 # (Training PA1 & PA2)
 ![image](https://github.com/user-attachments/assets/fba54d4a-280a-40aa-978b-3844b54142b9)
 
