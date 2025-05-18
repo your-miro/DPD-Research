@@ -62,8 +62,11 @@ Model: "sequential"
 
 # (Training PA1 & PA2)
 ![image](https://github.com/user-attachments/assets/fba54d4a-280a-40aa-978b-3844b54142b9)
+
 Behavioral modelling of PA1 nmse is -33.14927716768715 dB
+
 ![image](https://github.com/user-attachments/assets/e1409790-d6a0-4f86-93fb-5835f9fbc873)
+
 Behavioral modelling of PA2 nmse is -33.61280015701266 dB
 
 # (DPD using Loss Function)
