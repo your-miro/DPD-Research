@@ -1,4 +1,4 @@
-# Behavioral Modeling of GaN Power Amplifiers Using BiLSTM & DPD with Adaptive Cost Functions {Under Maintenance}
+# Behavioral Modeling of GaN Power Amplifiers Using BiLSTM & DPD with Adaptive Cost Functions (Under Work)
 
 ## Overview
 
